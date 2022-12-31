@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package order;
+
+service OrderService {
+  rpc FindOneById(FindOrderByIdRequest) returns (Order) {}
+}
+
+message Order {
+  string id = 1;
+  string name = 2;
+  int32  price = 3;
+  string createdAt = 4;
+  string updatedAt = 5;
+}
+
+message FindOrderByIdRequest {
+  string id = 1;
+}

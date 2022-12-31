@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package delivery;
+
+service DeliveryService {
+  rpc ProcessOrderDelivery(ProcessOrderDeliveryRequest) returns (google.protobuf.Empty) {}
+}
+
+message ProcessOrderDeliveryRequest {
+  string orderId = 1;
+}
