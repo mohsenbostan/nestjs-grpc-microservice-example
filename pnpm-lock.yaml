@@ -20,6 +20,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
   jest: 29.3.1
+  nestjs-grpc-exceptions: ^0.0.1
   prettier: ^2.3.2
   reflect-metadata: ^0.1.13
   rxjs: ^7.2.0
@@ -38,6 +39,7 @@ dependencies:
   '@nestjs/core': 9.2.1_qpblwiuxxxv5ilgjwzmmgbtkcq
   '@nestjs/microservices': 9.2.1_pbleyehkxigghr6wruabdjhebu
   '@nestjs/platform-express': 9.2.1_hjcqpoaebdr7gdo5hgc22hthbe
+  nestjs-grpc-exceptions: 0.0.1_4qrd3vrpeveduhwrgsstvh436i
   reflect-metadata: 0.1.13
   rxjs: 7.8.0
 
@@ -3798,6 +3800,20 @@ packages:
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
+
+  /nestjs-grpc-exceptions/0.0.1_4qrd3vrpeveduhwrgsstvh436i:
+    resolution: {integrity: sha512-roIJ27E+r3Udbt5CbmdEwxQZutakLxVBzm/V8IIPW4PKe5TReCcN7bvsYT+nYUzKI+RzHPOgUkk8RPTtp3uVag==}
+    peerDependencies:
+      '@grpc/grpc-js': '*'
+      '@nestjs/common': ^8.0.0 || ^9.0.0
+      '@nestjs/core': ^8.0.0 || ^9.0.0
+      '@nestjs/microservices': ^8.0.0 || ^9.0.0
+    dependencies:
+      '@grpc/grpc-js': 1.8.0
+      '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/core': 9.2.1_qpblwiuxxxv5ilgjwzmmgbtkcq
+      '@nestjs/microservices': 9.2.1_pbleyehkxigghr6wruabdjhebu
+    dev: false
 
   /node-abort-controller/3.0.1:
     resolution: {integrity: sha512-/ujIVxthRs+7q6hsdjHMaj8hRG9NuWmwrz+JdRwZ14jdFoKSkm+vDsCbF9PLpnSqjaWQJuTmVtcWHNLr+vrOFw==}
